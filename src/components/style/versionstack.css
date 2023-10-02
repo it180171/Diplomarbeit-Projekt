@@ -1,0 +1,225 @@
+.box {
+    place-items: center;
+}
+
+.installerVersions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+    gap: 2vw 5vh;
+    width: 80%;
+}
+
+.versionName {
+    font-size: 30px;
+    text-align: center;
+    background-color: #124d94;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.popup-info h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004588;
+    text-transform: uppercase;
+}
+.popup-info h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #004588;
+}
+
+.info-icon {
+    color: #004588;
+}
+
+.info-icon:hover {
+    color: #FFDD00;
+
+}
+
+.popup-info {
+    display: grid;
+    grid-template-columns: 40vw 50px;
+    column-gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: calc(2.1vw + 50px);
+    place-items: center;
+}
+
+
+
+.details {
+    border: 1px solid red;
+}
+
+.info-box {
+}
+
+.info-box span {
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: .9rem;
+}
+
+.info-box span > h1 {
+    font-size: 1.4rem;
+    color: #004588;
+}
+
+.info-box span > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    font-size: 1.1rem;
+    color: #464646;
+}
+
+
+.showMoreBtn {
+    margin-left: 2%;
+}
+
+button.MuiButton-root {
+    margin-left: 2vw;
+}
+
+@media (max-width: 775px) {
+    .info-box span > h1 {
+        font-size: 1.2rem;
+    }
+    .info-box span > p {
+        font-size: 1rem;
+    }
+    .info {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 1rem !important;
+    }
+    button.MuiButton-root {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 616px) {
+    .info-box span > h1 {
+        font-size: .8rem !important;
+    }
+    .info-box span > p {
+        font-size: .8rem;
+    }
+    .info {
+        font-size: 1.3rem;
+    }
+    .title {
+        font-size: .8rem !important;
+    }
+}
+
+@media (max-width: 1348px) {
+    .popup-info h1 {
+        font-size: 1.8rem;
+    }
+    .popup-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .versionName {
+        font-size: 1.4rem;
+    }
+    .info-icon {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .popup-info h1 {
+        font-size: 1.8rem;
+    }
+    .popup-info h2 {
+        font-size: 1.1rem;
+    }
+    .versionName {
+        font-size: 1.2rem;
+    }
+    .info-icon {
+        width: 2rem;
+    }
+}
+
+@media (max-width: 777px) {
+    .popup-info h1 {
+        font-size: 1rem !important;
+    }
+    .popup-info h2 {
+        font-size: .7rem !important;
+    }
+    .versionName {
+        font-size: .7rem;
+    }
+    .info-icon {
+        width: 1.2rem;
+    }
+}
+@media (max-width: 960px) {
+    .popup-info h1 {
+        font-size: 1.3rem;
+    }
+    .popup-info h2 {
+        font-size: .8rem !important;
+    }
+}
+@media (max-width: 550px) {
+    .popup-info h1 {
+    font-size: .8rem !important;
+    }
+    .popup-info h2 {
+        font-size: .5rem !important;
+    }
+    .versionName {
+        font-size: .5rem;
+    }
+    .info-icon {
+        width: 1rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .popup-info h1 {
+        font-size: .5rem !important;
+    }
+    .popup-info h2 {
+        font-size: .2rem !important;
+    }
+    .versionName {
+        font-size: .3rem;
+    }
+    .info-icon {
+        width: .7rem;
+    }
+    .popup-info {
+        display: grid;
+        grid-template-columns: 35vw 21px;
+    }
+}
+
+.loadingBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+

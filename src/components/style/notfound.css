@@ -1,0 +1,28 @@
+.notFound-container {
+    width: 80vw;
+    height: 100vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.goAway-container {
+    width: 80vw;
+    height: 100vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.goAway-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #004588;
+    font-size: 1.5rem;
+}

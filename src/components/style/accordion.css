@@ -1,0 +1,7 @@
+.normalAccordion > .MuiAccordionSummary-gutters {
+    background-color: rgb(70, 169, 200) !important;
+}
+
+.normalAccordion > .MuiAccordionSummary-gutters  .MuiAccordionSummary-content {
+    font-size: 2rem;
+}

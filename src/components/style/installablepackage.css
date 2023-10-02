@@ -1,0 +1,33 @@
+.container > h1{
+    text-align: left;
+    font-size: 2.5rem;
+    color: #004588;
+    text-transform: uppercase;
+}
+
+
+.main span div > h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #004588;
+    text-transform: uppercase;
+}
+
+.main > span > h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: BLUE;
+    text-transform: uppercase;
+}
+
+.main > span > div > h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: BLUE;
+    text-transform: uppercase;
+}
+
+.main > span{
+    text-align: left;
+}
+

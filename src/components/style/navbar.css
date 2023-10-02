@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-container {
+    background-color: #FFDD00;
+    color: #004588;
+    min-width: 62px;
+}
+
+.sidebar-icon:hover {
+    background-color: #004588;
+    color: #FFDD00;
+}
+
+.title {
+    padding-top: 5px;
+}
+
+.doka-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+    padding: 7vh 1vh 7vh;
+}
+
+.icon:not(:last-child) {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.resetTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: .3rem;
+    transition: all .5s ease-in-out;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+.logout-btn:hover {
+    color: #2a73c5;
+}
+
+.nav-container {
+    max-width: 330px;
+}
+
+.reset:hover {
+    background-color: transparent !important;
+    color: #2a73c5;
+    transform: scale(1.1);
+}
+
+.sidebar-icon {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-content: space-between;
+    padding-left: 2rem;
+    font-size: larger;
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.exportMenu .MuiPaper-root {
+    width: 20%;
+    max-width: 330px;
+    background-color: #FFDD00;
+    color: #004588;
+}
+
+@media (max-width: 1214px) {
+    @media (max-height: 1900px) {
+        .sidebar-icon .title {
+            font-size: 0 !important;
+        }
+
+        .sidebar-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logout-btn {
+            font-size: 1.2rem;
+            margin-top: 1.7rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    @media (max-height: 1900px) {
+        .nav-container {
+            width: 20vw;
+        }
+
+        .sidebar-icon svg {
+            width: 1.5rem;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reset {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logout-btn {
+            font-size: .8rem;
+            margin-top: 2rem;
+        }
+        .resetTitle {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 412px) {
+    @media (max-height: 1900px) {
+        .sidebar-icon .title {
+            font-size: 0 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar-icon svg {
+            width: 1.2rem;
+        }
+
+        .nav-container {
+            width: 17vw;
+        }
+
+        .reset {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .reset-btn {
+            width: 2.2rem !important;
+        }
+        .resetTitle {
+            font-size: 0 !important;
+        }
+
+        .logout-btn {
+            font-size: .6rem !important;
+        }
+    }
+}
+
+@media (max-height: 792px) {
+    @media (max-width: 1214px) {
+
+        .sidebar-icon .title {
+            font-size: 1rem;
+        }
+
+        .sidebar-icon svg {
+            width: 1.5rem;
+        }
+    }
+}
+@media (max-height: 792px) {
+    .reset {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .reset-btn {
+        width: 3rem;
+    }
+    .resetTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .logout-btn {
+        font-size: 1rem;
+    }
+
+}
+@media (max-height: 730px) {
+    .sidebar-icon .title {
+        font-size: 1rem;
+    }
+
+    .sidebar-icon svg {
+        width: 1.5rem;
+    }
+    .logout-btn {
+        margin-top: 0;
+    }
+}
+@media (max-height: 670px) {
+    .sidebar-icon .title {
+        font-size: .8rem;
+    }
+
+    .sidebar-icon svg {
+        width: 1.2rem;
+    }
+    .reset-btn {
+        width: 1.5rem;
+        height: 7vh;
+    }
+    .logout-btn {
+        font-size: .7rem;
+        margin-top: 1vh;
+    }
+    .resetTitle {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 602px) {
+    @media (max-height: 666px) {
+        .reset {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+        .reset-btn {
+            width: 2rem;
+            height: 7vh;
+            margin-top: .5vh;
+        }
+        .resetTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: .5rem;
+        }
+        .logout-btn {
+            font-size: .7rem;
+            margin-top: 1vh;
+        }
+    }
+}
+
+
+
+
+/*@media (max-width: 1000px) {
+    .doka-logo {
+        height: 15vh;
+    }
+}
+
+@media (max-width: 626px) {
+    .doka-logo {
+        height: 10vh;
+    }
+}
+
+@media (max-width: 390px) {
+    .doka-logo {
+        height: 5vh;
+    }
+}
+*/

@@ -1,0 +1,156 @@
+:root {
+    --added: #00ff0056;
+    --changed: #ffee0057;
+    --removed: #ff44004f;
+}
+
+.importContainer {
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    height: 35vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.dnbBtnBox {
+    display: grid;
+    justify-content: end;
+}
+
+section>div,
+.dndBox {
+    width: clamp(400px, 60vw, 1000px);
+}
+
+.dndBox {
+    border: 3px dashed black;
+    height: 30vh;
+    display: grid;
+    place-items: center;
+}
+
+.importConfigBox {
+    display: grid;
+    grid-template-rows: 80vh 1fr;
+    height: 97vh;
+    padding: 0 1vw;
+}
+
+.configContainer {
+    /* height: 80vh; */
+    overflow-y: auto;
+}
+
+.configContainer h1 {
+    text-align: center;
+}
+
+.configContainer > h1 {
+    border-bottom: 1px solid black;
+    margin-top: 1vh;
+}
+
+.configsBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+}
+
+.configsBox h1 {
+    border: 1px solid black;
+    margin: 1vh 0;
+}
+
+.statsBtns {
+    /* height: 17vh; */
+    display: grid;
+    grid-template-rows: 1fr 40px;
+}
+
+.packageContent > :is(p, div) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+/* .packageContent p span {
+height: 37px;
+} */
+
+.packageContent> :is(p, div) > span {
+    height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1em;
+    width: 100%;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,  minmax(150px, 1fr));
+    border: 1px solid black;
+    margin: 2vh 0;
+}
+
+.stats > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    height: min-content;
+}
+
+.configBox .added {
+    background-color: var(--added);
+}
+
+.configBox .changed {
+    background-color: var(--changed);
+}
+
+.configBox .removed {
+    background-color: var(--removed);
+}
+
+
+.stats svg {
+    font-size: 1.5rem;
+}
+
+.stats .added {
+    color: var(--added);
+}
+
+.stats .changed {
+    color: var(--changed);
+}
+
+.stats .removed {
+    color: var(--removed);
+}
+
+.importBtnBox {
+    display: flex;
+    justify-content: end;
+}
+
+.configContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5e5e5e69;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+}

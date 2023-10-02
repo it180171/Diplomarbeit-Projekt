@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.homeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: mediumvioletred;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    transition: all .2s;
+}
+
+.wrapper .tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.wrapper:hover {
+    background: #1877F2;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.wrapper:hover .tooltip {
+    opacity: 1;
+}
+
+.wrapper:hover .tooltip {
+    transform: rotate(-45deg);
+}
+
+.menuContainer {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.innerBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(30px, 3vw, 200px)
+}
+
+.menuContainer>div>a>div {
+    background-color: #164179;
+    color: rgb(255, 255, 255);
+    width: calc(20vh + 10vw);
+    height: calc(20vh + 10vw);
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-content: space-between;
+    padding-top: 2rem;
+    border-radius: 2rem;
+}
+
+.menuContainer h2 {
+    font-size: clamp(2rem, 3vw, 3rem) !important;
+    text-align: center;
+    word-spacing: 30vw;
+    color: white;
+}
+
+
+
+.innerBox>a>div>svg {
+    color: rgb(250, 237, 0);
+    font-size: clamp(4rem, 5vw, 6rem);
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+.login-btn:hover {
+    /* color: #e63946;*/
+    color: #FFDD00;
+}
+
+.login-btn {
+    /*color: #f1faee;*/
+    color: #004588;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: breathing 3s linear infinite;
+    width: 290px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes breathing {
+    0% {
+        border: 1px solid rgba(0,69,136, 0);
+    }
+    20% {
+        border: 1px solid rgba(0,69,136, 0);
+    }
+
+    40% {
+        border: 1px solid rgba(0,69,136, .5);
+    }
+    60% {
+        border: 1px solid rgba(0,69,136, 1);
+
+    }
+    80% {
+        border: 1px solid rgba(0,69,136, .25);
+    }
+    100% {
+        border: 1px solid rgba(0,69,136, .10);
+    }
+}

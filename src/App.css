@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+    position: relative;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.greetUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+
+.login-logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
